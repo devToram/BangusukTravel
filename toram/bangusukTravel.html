@@ -5,11 +5,33 @@
 <head>
   <meta charset="utf-8">
   <title>Bangusuk Travel</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=++여기가키입니다++&callback=initialize&libraries=&v=weekly"
+  defer
+  ></script>
+  <style type="text/css">
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #map,
+    #pano {
+      float: left;
+      height: 100%;
+      width: 50%;
+    }
+  </style>
+  <script src="./script.js"></script>
+
 </head>
 
 <body>
-  <div id="map" style="width:50%; height: 100vh;"></div>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoolxivt8IBnMKBFcfPavgZTHPJo4bg94&callback=initMap"></script>
-  <script src="./script.js"></script>
+  <div id="map"></div>
+  <div id="pano"></div>
+  <div id="position-cell"></div>
+
 </body>
 </html>
