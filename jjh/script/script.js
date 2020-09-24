@@ -75,7 +75,7 @@ function initialize() {
       console.log(posArray[0], posArray[1]);
       
       fetch(
-        'https://api.openweathermap.org/data/2.5/weather?lat='+String(posArray[0])+'&lon='+String(posArray[1])+'&appid=AIzaSyANNU5oPHy2XtXKwzt_zy_v__T-K9tCrqE&units=metric'
+        'https://api.openweathermap.org/data/2.5/weather?lat='+String(posArray[0])+'&lon='+String(posArray[1])+'&appid=KEY&units=metric'
       )
         .then(function(response){
         return response.json();
