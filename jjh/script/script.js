@@ -75,7 +75,7 @@ function initialize() {
       console.log(posArray[0], posArray[1]);
       
       fetch(
-        'https://api.openweathermap.org/data/2.5/weather?lat='+String(posArray[0])+'&lon='+String(posArray[1])+'&appid=KEY&units=metric'
+        'https://api.openweathermap.org/data/2.5/weather?lat='+String(posArray[0])+'&lon='+String(posArray[1])+'&appid=YOUR_KEY&units=metric'
       )
         .then(function(response){
         return response.json();
@@ -149,3 +149,29 @@ function targetPoint() {
 
 
 }
+
+$(function(){
+  $("#shot").on("click",function(){
+      var screenshot = {};
+      html2canvas(document.getElementById("widget-scene-canvas"),{
+        useCORS: true,
+        onrendered: function (canvas) {
+          console.log("!")
+        }
+      })
+      .then(canvas => saveAs(canvas.toDataURL('image/png'),"capture-test.png"))
+      ;
+    });
+    function saveAs(uri, filename){
+      var link = document.createElement('a');
+      if (typeof link.download === 'string'){
+        link.href = uri;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }else{
+        window.open(uri);
+      }
+    }
+  });
