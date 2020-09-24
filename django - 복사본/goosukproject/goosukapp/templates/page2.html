@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goosuk-Goosuk</title>
+    <!-- custom css link -->
+    <link rel="stylesheet" type="text/css" href="../static/css/rset.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- swiper link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Google map api link -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=++키자리입니다++&callback=initialize&libraries=&v=weekly"
+      defer
+    ></script>
+    
+    <script type="text/javascript" src="../static/js/side_view.js"></script>
+    {% comment %} jquery링크 {% endcomment %}
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <!-- 헤더 시작 -->
+    <div class="header">
+      <!-- <a class="logo" href="page1.html" title="goosuk goosuk">
+        <img
+          src="../static/images/logo_b_remove.png"
+          alt="goosuk goosuk logo"
+        />
+      </a> -->
+    </div>
+    <!-- 헤더 끝 -->
+
+    <!-- 메인 시작 -->
+    <div class="frame">
+      <section class="second-section">
+        <div class="map-section">
+          <div id="floating-panel">
+            <a class="logo" href="{% url 'page1' %}" title="goosuk goosuk">
+              <img
+                src="../static/images/logo_b_remove.png"
+                alt="goosuk goosuk logo"
+              />
+            </a>
+            <input
+              id="address"
+              type="textbox"
+              value=""
+              placeholder="어디로 떠나세요?"
+            />
+            <input
+              id="address-search"
+              type="button"
+              value="출발"
+              onclick="codeAddress()"
+              placeholder="Enter a location"
+            />
+            <button id="shot">기념사진 찍기</button>
+          </div>
+          <div id="map"></div>
+          <div id="legend"><h3>지금 이 지역은!</h3></div>
+          <div id="pano"></div>
+          <div id="position-cell"></div>
+          <div id="content"></div>
+        </div>
+        <div class="contents-section">
+            <object title="YouTube video player" class="youtube-player" type="text/html"  width="560" height="315"  data="//www.youtube.com/embed/UDVTJoTiYV0" allowFullScreen></object>
+            <object title="YouTube video player" class="youtube-player" type="text/html"  width="560" height="315"  data="//www.youtube.com/embed/Fup6oumUsYU" allowFullScreen></object>
+            <object title="YouTube video player" class="youtube-player" type="text/html"  width="560" height="315"  data="//www.youtube.com/embed/UDVTJoTiYV0" allowFullScreen></object>
+            <object title="YouTube video player" class="youtube-player" type="text/html"  width="560" height="315"  data="//www.youtube.com/embed/Fup6oumUsYU" allowFullScreen></object>
+
+       </div>
+      </section>
+    </div>
+    <!-- 푸터 시작 -->
+    <div class="footer">
+      <div class="container">
+        <div class="pull-right">
+          <div class="copyright">
+            © 2020 Team
+            <span>Gloo-Gloo</span>, JH Park, SC Park, KJ Yoon, JH Jeon
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 푸터 끝 -->
+    <!-- 메인 끝 -->
+  </body>
+</html>

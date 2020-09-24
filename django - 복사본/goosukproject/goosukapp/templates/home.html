@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+ {% load static %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Goosuk Goosuk</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC1jJkU1NDhLSEzWKsCNITkfUq992RvR8&callback=initialize&libraries=&v=weekly"
+  defer
+  ></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}"/>
+  
+  <script src="{% static 'home.js' %}"></script>
+
+</head>
+
+<body>
+  <div id="map"></div>
+  <div id="legend"><h3>지금 이 지역은!</h3></div>
+  <div id="pano"></div>
+  <div id="position-cell"></div>
+  <div id="content"></div>
+</body>
+</html>
