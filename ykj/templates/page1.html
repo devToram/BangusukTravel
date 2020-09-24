@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goosuk-Goosuk</title>
+    <!-- custom css link -->
+    <link rel="stylesheet" type="text/css" href="../static/css/rset.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- swiper link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- 헤더 시작 -->
+    <div class="header">
+      <a class="logo" href="page1.html" title="goosuk goosuk">
+        <img
+          src="../static/images/logo_b_remove.png"
+          alt="goosuk goosuk logo"
+        />
+      </a>
+    </div>
+    <!-- 헤더 끝 -->
+
+    <!-- 메인 시작 -->
+    <div class="frame">
+      <div class="container">
+        <section class="main-section">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="main-title">
+                여행자님,<br />
+                어떤 여행을 꿈꾸시나요?
+              </h1>
+              <!-- <h1 class="title">Where is your destination?</h1> -->
+              <!-- <h3 class="sub-title">
+                여행과 일상을 안전하게,<br />구석구석 테마여행!
+              </h3> -->
+              <p class="small-desc">
+                잠시 멈춤이 필요한 지금 <br />
+                세상에 하나뿐인 여행 시작하기
+              </p>
+              <div class="input-section">
+                <!-- <input type="text" placeholder="어디로 떠나세요?" /> -->
+                <a href="page2.html">Get Started →</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide">
+                    <img
+                      src="../static/images/img_1.jpg"
+                      alt="image of grand canyon"
+                    />
+                    <div class="comment">
+                      <h3 class="">The Grand Canyon, USA</h3>
+                      <p>
+                        웅장하고 신비로운 계곡이 있는<br />
+                        세계적인 공원
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide"
+                    ><img
+                      src="../static/images/img_2.jpg"
+                      alt="image of river"
+                    />
+                    <div class="comment">
+                      <h3 class="">Bangkok, Thailand</h3>
+                      <p>고풍스러운 전통과 현대의 멋을 느껴보세요.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide"
+                    ><img
+                      src="../static/images/img_3.jpg"
+                      alt="image of traveler"
+                    />
+                    <div class="comment">
+                      <h3 class="">Great Barrier Reef, Australia</h3>
+                      <p>세계 최대의 산호초 지대를 즐겨보세요.</p>
+                    </div></a
+                  >
+                  <a href="#" class="swiper-slide"
+                    ><img
+                      src="../static/images/img_4.jpg"
+                      alt="image of bridge"
+                    />
+                    <div class="comment">
+                      <h3 class="">Golden Gate Bridge, USA</h3>
+                      <p>세계적인 현수교를 만나보세요.</p>
+                    </div></a
+                  >
+                  <a href="#" class="swiper-slide"
+                    ><img
+                      src="../static/images/img_5.jpg"
+                      alt="image of airport"
+                    />
+                    <div class="comment">
+                      <h3 class="">Let's go!</h3>
+                      <p>당신의 목적지는 어디인가요?</p>
+                    </div></a
+                  >
+                  <a href="#" class="swiper-slide"
+                    ><img
+                      src="../static/images/img_6.jpg"
+                      alt="image of Italy"
+                    />
+                    <div class="comment">
+                      <h3 class="">Cinque Terre, Italy</h3>
+                      <p>매혹적인 절벽마을을 감상해보세요.</p>
+                    </div></a
+                  >
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- 푸터 시작 -->
+      <div class="footer">
+        <div class="container">
+          <div class="pull-right">
+            <div class="copyright">
+              © 2020 Team
+              <span>Gloo-Gloo</span>, JH Park, SC Park, KJ Yoon, JH Jeon
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 푸터 끝 -->
+    </div>
+    <!-- 메인 끝 -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        /* autoplay: {
+          delay: 3000,
+        }, */
+      });
+    </script>
+  </body>
+</html>
